@@ -38,7 +38,7 @@ const Login = () => {
               <h1 className='text-3xl font-bold'><span className='text-primary'>Admin</span>Login</h1>
               <p className='font-light leading-none mt-1'>Enter your credientials to access the admin panel</p>
           </div>
-          <div>
+          <div className='text-sm'>
             <p>Admin Email: admin@example.com</p>
             <p>Admin Password: admin123</p>
           </div>
