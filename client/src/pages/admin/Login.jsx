@@ -34,9 +34,13 @@ const Login = () => {
     <div className='flex items-center justify-center h-screen'>
       <div className='w-full max-w-md p-6 max-md:m-6 border border-primary/30 shadow-xl shadow-primary/15 rounded-lg'>
         <div className='flex flex-col items-center justify-center'>
-          <div className='w-full py-6 text-center'>
+          <div className='w-full pt-5 mb-4 text-center'>
               <h1 className='text-3xl font-bold'><span className='text-primary'>Admin</span>Login</h1>
-              <p className='font-light leading-none'>Enter your credientials to access the admin panel</p>
+              <p className='font-light leading-none mt-1'>Enter your credientials to access the admin panel</p>
+          </div>
+          <div>
+            <p>Admin Email: admin@example.com</p>
+            <p>Admin Password: admin123</p>
           </div>
           <form onSubmit={handleSubmit} className='w-full mt-6 sm:max-w-md text-gray-600'>
             <div className='flex flex-col'>
