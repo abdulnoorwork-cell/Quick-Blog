@@ -15,7 +15,7 @@ const BlogList = () => {
     }
     return (
         <div className='container mx-auto px-3'>
-            <div className="flex justify-center gap-4 sm:gap-8 my-10 relative">
+            <div className="flex justify-center gap-4 sm:gap-8 my-10 relative text-sm sm:text-base">
                 {blogCategories.map((item, index) => (
                     <div key={index} className='relative'>
                         <button onClick={() => setMenu(item)} className={`cursor-pointer text-gray-500 ${menu === item && 'text-white px-4 pt-0.5'}`}>
@@ -27,11 +27,11 @@ const BlogList = () => {
                     </div>
                 ))}
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mb-24'>
+            {blogs ? <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 mb-24'>
                 {filterBlogs().filter(blog => menu === 'All' ? true : menu === blog.category).map((blog, index) => (
                     <BlogCard key={index} blog={blog} />
                 ))}
-            </div>
+            </div> : <div>Loading...</div>}
         </div>
     )
 }
