@@ -11,7 +11,7 @@ const Navbar = () => {
       <Link to={'/'}>
         <img src={assets.logo} alt="logo" className='w-32 sm:w-44' />
       </Link>
-      <button onClick={()=> navigate('/admin')} className='flex items-center gap-2 text-sm rounded-full cursor-pointer bg-primary text-white px-10 py-2.5'>
+      <button onClick={()=> navigate('/admin')} className='flex items-center gap-2 text-sm rounded-full cursor-pointer bg-primary text-white px-10 py-2.5 sm:py-3'>
         {token ? 'Dashboard' : 'Login'}
         <img src={assets.arrow} className='w-3' alt="arrow" />
       </button>
