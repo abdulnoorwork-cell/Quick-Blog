@@ -38,7 +38,7 @@ const Blog = () => {
       </div>
       <div className='max-w-5xl md:mx-auto my-10 mt-6'>
         <img src={data.image} alt="" className='rounded-3xl mb-5' />
-        <div className='rich-text max-w-5xl mx-auto' dangerouslySetInnerHTML={{ __html: data.description }}></div>
+        <div className='rich-text max-w-5xl mx-auto text-gray-600' dangerouslySetInnerHTML={{ __html: data.description }}></div>
         {/* Share Buttons */}
         <div className='my-24 max-w-5xl mx-auto'>
           <p className='font-semibold my-4'>Share this article on social media</p>
